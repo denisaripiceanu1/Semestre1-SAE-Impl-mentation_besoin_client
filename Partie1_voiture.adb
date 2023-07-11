@@ -22,19 +22,19 @@ package body voiture is
          Get (v.place);
       end loop;
 
-      Put ("Introduire l'heure d'arrivée :");
+      Put ("Introduire l'heure d'arrivÃ©e :");
       Get (v.heureEntree_h);
       while v.heureEntree_h < 0 or v.heureEntree_h >= 24 loop
          Put_Line ("La valeur saisie n'est pas valide!");
-         Put ("Introduire une nouvelle valeur pour l'heure d'arrivée : ");
+         Put ("Introduire une nouvelle valeur pour l'heure d'arrivÃ©e : ");
          Get (v.heureEntree_h);
       end loop;
 
-      Put ("Introduire les minutes d'arrivée :");
+      Put ("Introduire les minutes d'arrivÃ©e :");
       Get (v.heureEntree_m);
       while v.heureEntree_m < 0 or v.heureEntree_m > 59 loop
          Put_Line ("La valeur saisie n'est pas valide!");
-         Put ("Introduire une nouvelle valeur pour les minutes d'arrivée : ");
+         Put ("Introduire une nouvelle valeur pour les minutes d'arrivÃ©e : ");
          Get (v.heureEntree_m);
       end loop;
       New_Line;
@@ -53,10 +53,10 @@ package body voiture is
          i := i + 1;
       end loop;
       New_Line;
-      Put ("est stationée à la place de parking : ");
+      Put ("est stationÃ©e Ã  la place de parking : ");
       Put (v.place);
       New_Line;
-      Put ("et son heure d'arrivée est :  ");
+      Put ("et son heure d'arrivÃ©e est :  ");
       put (v.heureEntree_h);
       Put ("h: ");
       put (v.heureEntree_m);
@@ -110,4 +110,5 @@ package body voiture is
       put("Duree de stationement : ");
       return duree;
    end calculer_duree_stationnement;
+
 end voiture;
