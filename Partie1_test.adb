@@ -30,7 +30,4 @@ begin
       put("Les numeros d'immatriculation sont identiques! ");
    end if;
 
-
-
-
 end test;
