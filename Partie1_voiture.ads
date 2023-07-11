@@ -4,11 +4,11 @@ package voiture is
    TAILLE_MAX : constant Integer := 9;
    type CharArray is array (1 .. TAILLE_MAX) of Character;
 
-   -- Definir le type de donn´ee Type Voiture
+   -- Definir le type de donnÂ´ee Type Voiture
    type Type_Voiture is record
-      num         : CharArray; -- le numéro d'immatriculation
-      place       : Integer; -- le numéro de place du parking
-      heureEntree : Integer; -- l'heure d arrivée srokée en secondes
+      num         : CharArray; -- le numÃ©ro d'immatriculation
+      place       : Integer; -- le numÃ©ro de place du parking
+      heureEntree : Integer; -- l'heure d arrivÃ©e srokÃ©e en secondes
       heureEntree_h : Integer;
       heureEntree_m : Integer;
    end record;
@@ -24,4 +24,5 @@ package voiture is
    function obtenir_num_place (v : in Type_Voiture) return Integer;
 
    function calculer_duree_stationnement (v : in Type_Voiture) return Integer;
+
 end voiture;
